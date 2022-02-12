@@ -38,7 +38,6 @@ export default function Home({ hero, popular, favourite }) {
           url={hero.url}
           genre={hero.genre}
         />
-        <iframe src="https://canary.discord.com/widget?id=941934364554592296&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" align="right"></iframe>
         {continueWatching.length === 0 ? (
           ""
         ) : (
