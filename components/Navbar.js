@@ -173,7 +173,7 @@ export default function Navbar({ page }) {
               </Link>
             </li>
             <li>
-              <Link href="/https://discord.gg/RBhk3Kmh7n" passHref>
+              <Link href="https://discord.gg/RBhk3Kmh7n" passHref>
                 <p
                   className={
                     page === "about"

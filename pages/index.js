@@ -48,7 +48,7 @@ export default function Home({ hero, popular, favourite }) {
         ) : (
           <List pageTitle="Recently added" data={recentlyAdded} />
         )}
-        <List pageTitle="Most popular" data={popular} />
+        <List  id = "test" pageTitle="Most popular" data={popular} />
         <div className="pb-16">
           <List pageTitle="Most favourite" data={favourite} />
         </div>
