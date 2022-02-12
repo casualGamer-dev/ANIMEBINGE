@@ -46,7 +46,7 @@ export default function Home({ hero, popular, favourite }) {
         {recentlyAdded.length === 0 ? (
           ""
         ) : (
-          <List pageTitle="Recently added" data={recentlyAdded} />
+          <List pageTitle="Recently added Episode" data={recentlyAdded} />
         )}
         <List  id = "test" pageTitle="Most popular" data={popular} />
         <div className="pb-16">

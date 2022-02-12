@@ -18,7 +18,7 @@ export default function Player({
   const [previous, setPrevious] = useState("");
   const [next, setNext] = useState("");
   const options = {
-    autoplay: true,
+    autoplay: false,
     controls: [
       "rewind",
       "play",
