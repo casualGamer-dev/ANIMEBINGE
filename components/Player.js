@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import { FaGripLinesVertical } from "react-icons/fa";
 import Plyr from "plyr-react";
 import "plyr-react/dist/plyr.css";
+import {useRouter} from 'next/router';
 import dynamic from 'next/dynamic'
+import {DiscussionEmbed} from "disqus-react"
 export default function Player({
   name,
   anime,
@@ -74,7 +76,7 @@ export default function Player({
     }
     a();
   }, [episodes, currentEpisode]);
-
+  const router = useRouter()
   const attachEventHandler = () => {
     try {
       document
@@ -255,7 +257,20 @@ export default function Player({
             );
           }
         })}
+
       </div>
+ <div className="rounded-md ">
+ <DiscussionEmbed
+        shortname={"animebinge-1"}
+        config={{
+          url: "https://animebinge.xyz/" + router.asPath,
+          identifier: router.pathname + router.asPath,
+          title: router.pathname,
+        }}
+        width={200}
+        height={320}
+      />
+ </div>
     </>
   );
 }

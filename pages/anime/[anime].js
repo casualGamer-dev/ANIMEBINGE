@@ -7,11 +7,11 @@ import { useEffect, useState } from "react";
 import cheerio from "cheerio";
 import CryptoJS from "crypto-js";
 import url from "url";
-
-
+import { DiscussionEmbed } from "disqus-react";
+import {useRouter} from 'next/router';
 export default function Anime({ data }) {
   const [episodes, setEpisodes] = useState([]);
-
+  const router = useRouter()
   useEffect(() => {
     async function a() {
       var response = await fetch(data.url);
@@ -74,7 +74,9 @@ export default function Anime({ data }) {
             episodes={episodes}
             videoData={data.videoData}
           />
+
         </div>
+
         <Footer />
       </div>
     </>

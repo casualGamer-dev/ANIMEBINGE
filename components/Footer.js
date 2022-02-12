@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Disquscomments from './Disquscomments'
 import dynamic from 'next/dynamic'
 export default function Footer() {
   return (
