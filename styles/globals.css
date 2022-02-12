@@ -291,9 +291,10 @@ a {
 * {
   box-sizing: border-box;
 }
-#list-skeleton {
+
+#test {
   transition: transform .2s;
 }
-#list-skeleton:hover {
+#test:hover {
   transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
