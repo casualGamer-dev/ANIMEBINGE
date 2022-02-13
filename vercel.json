@@ -1,7 +1,7 @@
 {
     "routes": [
         {
-            "src": "/arc-sw.js",
+            "src": "/ar-sw.js",
             "dest": "https://arc.io/arc-sw.js"
         }
     ]
