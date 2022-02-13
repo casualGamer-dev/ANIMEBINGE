@@ -5,7 +5,6 @@ const Sitemap = () => {};
 
 export const getServerSideProps = ({ res }) => {
   const baseUrl = {
-    development: "http://localhost:3000",
     production: "https://animebinge.xyz",
   }[process.env.NODE_ENV];
 
@@ -16,6 +15,7 @@ export const getServerSideProps = ({ res }) => {
         "_app.js",
         "_document.js",
         "_error.js",
+        "search.js",
         "sitemap.xml.js",
       ].includes(staticPage);
     })
