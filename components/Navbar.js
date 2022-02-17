@@ -72,15 +72,15 @@ export default function Navbar({ page }) {
                         ? "md:w-5 md:h-5 xl:w-5 xl:h-5 lg:w-5 lg:h-5 h-4 w-4 text-blue-500"
                         : "md:w-5 md:h-5 xl:w-5 xl:h-5 lg:w-5 lg:h-5 h-4 w-4 text-gray-500"
                     }
-                    fill="white"
+                    fill="White"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       fillRule="evenodd"
-                      fill="white"
                       d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
                       clipRule="evenodd"
+                      
                     ></path>
                   </svg>
                 </button>
@@ -89,7 +89,7 @@ export default function Navbar({ page }) {
                 type="text"
                 size="34"
                 spellCheck={false}
-                style={{ backgroundColor: "rgb(193, 0, 0)" }}
+                style={{ backgroundColor: "rgb(34, 51, 68)" }}
                 value={search}
                 onChange={handleChange}
                 className="block md:p-3 md:pl-10 lg:p-3 lg:pl-10 xl:p-3 xl:pl-10 pl-9 p-3 w-full rounded-lg placeholder-white-400 text-xs focus:outline-none font-bold text-slate-200"
@@ -108,8 +108,8 @@ export default function Navbar({ page }) {
               <ul
                 className={
                   suggestionHidden || search.length < 2
-                    ? "rounded-b-lg absolute w-full bg-white-800 mt-1 hidden"
-                    : "rounded-b-lg absolute w-full bg-white-800 mt-1"
+                    ? "rounded-b-lg absolute w-full bg-gray-800 mt-1 hidden"
+                    : "rounded-b-lg absolute w-full bg-gray-800 mt-1"
                 }
                 id="suggestions"
               >
